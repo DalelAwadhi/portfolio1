@@ -1,0 +1,309 @@
+<!DOCTYPE html><!--type el fichier eli bech ne5dem 3lih html-->
+<html lang="fr"><!--langue français eli bech nesta3mel ha "yssahel el traduction w yexigi el lou8a he4i"-->
+
+<head>
+    <!--n7ot fih les parties css w ybenli el resultat mte3ou fel les couleurs distances + meta : parametres w les informations descriptifs ...-->
+    <meta charset="UTF-8"><!--y5ali les symboles , les accents ..yt3amlou bs7i7 ba3dina ... -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--important bech site ykoun reponsive bma3na yet2a9lem m3a el ecran mta3 tablette ...-->
+    <title>Portfolio - Awadhi Dalel</title><!--title mta3 site houwa awadhi dalel-->
+
+    <link rel="icon" type="image/png" href="fleur.png">
+    <!--ya3mel logo(favicon) lel site bima3na y7otli image s8ayrouna ba74a title mta3 site-->
+
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!--el ligne he4a bech ya3tini organisation lel programme mte3i fa matkounech bloc we7ed echay eli ywa4a7li el 5edma mte3i w el correction-->
+
+    <style>
+        /*t7el partie tekteb t7ot fiha des blocs css w tanss9*/
+
+        body {
+            /*tanss y5oss el page wosst w fin... */
+            font-family: 'Segoe UI', Arial, sans-serif;
+            /*naw3 el 5at*/
+            line-height: 1.6;
+            /*distance bin les lignes*/
+            margin: 0;
+            /*marge*/
+            padding: 0;
+            /*espace bin el cadre w el ecriture..*/
+            background-color: #fcfbfa;
+            /*background el site kif el crima mta3 el gateau bnina w mezyena */
+
+            color: #333;
+            /*couleur mta3 les lignes */
+        }
+
+        header {
+            /*tanssi9 y5oss el partie el fou9aniya */
+            background-color: #0b2545;
+            /*background mta3 el partie el fou9aniya bleue w heki el reference mte3ou*/
+            color: white;
+            /*2ay couleur wosst el header couleur ha white */
+            text-align: center;
+            /*el bech tektbou bech yjik horizontalement w fi el centre*/
+            padding: 45px 10px;
+            /*y7aded el espace bin el ecriture w borders de tels façon matkounech el ecritures lass9a f les bordures mta3 el background.. w t5ali espace houni men fou9 w louta 45px w 3al droit w gauche 10px*/
+        }
+
+        header img {
+            /*2ay image mawjouda fel header taba9 3liha el ma9asset he4i */
+            width: 120px;
+            /*el largeur mta3 el image 120px*/
+            height: 120px;
+            /*el longeur mata3 el image bech ykoun 120px*/
+            border-radius: 50%;
+            /*lazem 9ad el widht 9ad el height bech tjini cercle ba3ed*/
+            /*t5ali el image twali fi chakl cercle mdawra (remarq:tnajem t7ot 70% TA3ti chakl ovale (bay4a)w ela tnajem ta3mel border-radius:50% 10% 50% 10% w ta32ik chakl war9et chajra ..)heya tet7akemli fi el zaweya tsa8er wala tkaber w 3la ha4a echakl yetbadel*/
+            border: 3px solid #b5a494;
+            /*el bordure eli tdour 3al image bech tkoun el epaisseur 3px w solid ya3ni metwassel (dashed: met9ata3 w doted : n9ot)*w couleur #w 5tart el reference heki */
+            object-fit: cover;
+            /*y7afe4 3la chakl el image men8ir maya3mlel ha dilatation w y5ali echakl ywali twil aw 3ri4 ..*/
+            margin-bottom: 15px;
+            /*t5ali espace bin el image w <h1>:awel star .c'est pour cela 3malna espace 15px */
+        }
+
+        header h1 {
+            /*t7el css tab9ou 3la ay h1(3ounwen kbir) mawjoud fi el header*/
+            margin: 0;
+            /*tna7i les marges eli mawjoudin fou9 w ta7t el h1  */
+            font-size: 2.2rem;
+            /*el 7ajm mta3 el 5at akber 2.2 fois mel 5at el normal, yben kbir..*/
+            letter-spacing: 1px;
+            /*ya3mel espace bin el lettre w el lettre de tels façon tben a7la */
+        }
+
+        nav {
+            /*partie fiha les liens mta3 el transition bin les parties..*/
+            background-color: #134074;
+            /*couleur background*/
+            text-align: center;
+            /*les liens ykounou mawjoudin fi wost el bande eli 3malt ha*/
+            padding: 12px;
+            /*espace bin les liens el mawjoudin fel wost..*/
+            position: sticky;
+            /*t5ali les liens mawjoudin meme ken el utilisateurs mta3 el site hbat el e5er el page el bandes he4i tab9a  mawjouda*/
+            top: 0;
+            /*el top y7adedli win bech tab9a mawjouda w taba3 fiya el bande he4i mta3 les liens , ena houni top 0 ya3ni el fou9*/
+            z-index: 100;
+            /*y5ali el bande mta3 les liens tab9a mawjouda fou9 ay partie tet3ada 3leha */
+        }
+
+        nav a {
+            /*yestahdef les liens el mawjoudin fi e nav*/
+            color: white;
+            /*couleur mta3 el ecriture white*/
+            text-decoration: none;
+            /*fel 3adda ay liens nektbouh y7ottou ta7tou ligne w ena houni na7itou bech ykoun azyen*/
+            margin: 0 15px;
+            /*espace bin kol lien w el e5er 15px bech maykounouch less9in w 0px men fou9 w louta 5ater mafamech ktiba el fou9  w louta*/
+            font-weight: bold;
+            /*el ecriture mta3 les liens bech tkoun bold ya3ni en gras */
+        }
+
+        section {
+            /*t7el partie testahdef feha el partie eli fiha nousouss , information..*/
+            max-width: 750px;
+            /*le maximum mta3 3ordh el partie he4i houwa 750px , ken t7ot 1750 twali yesser 3ridha w mouch 7lowa */
+            margin: 30px auto;
+            /*t7ot 30px espace fou9 el partie he4i w ta7t ha bech matkounech less9a fi b3adh ha les partie bin el bandes mta3 el lien w partie he4i w auto 3al ymin w gauche mta3 el section de tels façon ye7sseb w ya3ref 9adech y7otli espace bech tkoun comme çi fel wosst*/
+            background: white;
+            /*background white*/
+            padding: 25px;
+            /*espace 25px fi les 4 parties de tels façon matkounech less9a fi les bordures mta3 el page*/
+            border-radius: 0px;
+            /*0 tadwir yab9a chaklou rectangle*/
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            /*4el 5fif bin les parties 0.05 w 0px ta7rik lel fou9 w 2px louta(5fif)*/
+        }
+
+        h2 {
+            /*yestahdef el 2eme titre h2*/
+            color: #0b2545;
+            border-bottom: 2px solid #b5a494;
+            /*el bordures eli ta7t el h2*/
+            padding-bottom: 8px;
+            /*espace bin el titre w el 5at*/
+            margin-bottom: 20px;
+            /*espace bin el 5at w el ecriture eli ta7t ha*/
+        }
+
+        .skill-container {
+            margin-bottom: 15px;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .skill-info i {
+            color: #134074;
+            margin-right: 8px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #e0e0e0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: #134074;
+        }
+
+        .project-block {
+            border-left: 4px solid #134074;
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0b2545;
+            color: white;
+            padding: 6px 14px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-right: 10px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            form input,
+            form textarea {
+                padding: 12px;
+                border: 1px solid #ccc;
+                font-size: 1rem;
+                background-color: #fafafa;
+                outline: none;
+            }
+
+            form button {
+                background-color: #0b2545;
+                color: white;
+                padding: 12px;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+                font-size: 1rem;
+            }
+
+            footer {
+                background-color: #222;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+
+            footer a {
+                color: #b5a494;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="img.jpg" alt="Photo de Awadhi Dalel">
+        <h1>Awadhi Dalel</h1>
+        <p style="margin: 5px 0 0 0; font-size: 1.1rem; color: #b5a494;">Étudiante en Génie Logiciel &amp; Systèmes
+            d'Information</p>
+    </header>
+    <nav>
+        <a href="#apropos"><i class="fa-solid fa-user"></i> À propos</a>
+        <a href="#competences"><i class="fa-solid fa-code"></i> Compétences</a>
+        <a href="#projets"><i class="fa-solid fa-briefcase"></i> Projets</a>
+        <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </nav>
+
+    <section id="apropos">
+        <h2><i class="fa-solid fa-circle-info"></i> À propos</h2>
+        <p>
+            Étudiante en première année de Génie Logiciel et Systèmes d’Information, passionnée par le développement
+            logiciel et les technologies d’intelligence artificielle. Rigoureuse, organised et dotée d’un bon esprit
+            d’équipe.
+        </p>
+    </section>
+    <section id="competences">
+        <h2><i class="fa-solid fa-star"></i> Compétences</h2>
+
+        <div class="skill-container">
+            <div class="skill-info"><span><i class="python"></i> python</span><span>95%</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 95%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-container">
+            <div class="skill-info"><span><i class="c++"></i> C++</span><span>85%</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-container">
+            <div class="skill-info"><span><i class="excel"></i> excel</span><span>70%</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-container">
+            <div class="skill-info"><span><i class="powerpoint"></i> powerpoint 2019</span><span>80%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+        </div>
+    </section>
+    <section id="projets">
+        <h2><i class="fa-solid fa-layer-group"></i> Mes Projets</h2>
+
+        <div class="project-block">
+            <h3>Projet : Innovating the Energy with AI</h3>
+            <p style="font-weight: bold; color: #666; margin: 0 0 10px 0;">Projet académique</p>
+            <ul style="padding-left: 20px; margin-bottom: 15px;">
+                <li>Participation à la conception d’un projet intégrant l’intelligence artificielle.</li>
+                <li>Contribution à l’élaboration de solutions innovantes dans le domaine de l’énergie.</li>
+                <li>Travail collaboratif au sein d’une équipe technique.</li>
+            </ul>
+            <a href="#" class="btn"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="btn"><i class="fa-solid fa-globe"></i> Voir le site</a>
+        </div>
+
+        <div class="project-block">
+            <h3>Membre active – Clubs CPU &amp; EnergeticX</h3>
+            <p style="font-weight: bold; color: #666; margin: 0 0 10px 0;">Vie associative</p>
+            <ul style="padding-left: 20px; margin-bottom: 15px;">
+                <li>Participation à des activités techniques et événements étudiants.</li>
+                <li>Collaboration sur des projets en groupe.</li>
+                <li>Développement de compétences en communication et travail collaboratif.</li>
+            </ul>
+            <a href="#" class="btn"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="btn"><i class="fa-solid fa-globe"></i> Voir le site</a>
+        </div>
+    </section>
+    <section id="contact">
+        <h2><i class="fa-solid fa-paper-plane"></i> Contactez-moi</h2>
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message envoyé avec succès !');">
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre adresse mail" required>
+            <textarea placeholder="Votre message..." rows="4" required></textarea>
+            <button type="submit">Envoyer le message</button>
+        </form>
+    </section>
+    <footer>
+        <p style="margin: 0 0 10px 0;">© 2026 Awadhi Dalel. Tous droits réservés.</p>
+        <div>
+            <a href="#" target="_blank
