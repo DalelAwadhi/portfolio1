@@ -162,53 +162,78 @@
             margin-bottom: 25px;
         }
 
-        .btn {
-            display: inline-block;
-            background-color: #0b2545;
-            color: white;
-            padding: 6px 14px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            margin-right: 10px;
+       .btn{
+    display:inline-block;
+    background:#0b2545;
+    color:white;
+    padding:8px 15px;
+    text-decoration:none;
+    margin-right:10px;
+}
 
-            form {
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-            }
+#contact{
+    max-width:750px;
+    margin:30px auto;
+}
 
-            form input,
-            form textarea {
-                padding: 12px;
-                border: 1px solid #ccc;
-                font-size: 1rem;
-                background-color: #fafafa;
-                outline: none;
-            }
+.contact-text{
+    color:#555;
+    font-size:20px;
+    margin-bottom:25px;
+}
 
-            form button {
-                background-color: #0b2545;
-                color: white;
-                padding: 12px;
-                border: none;
-                font-weight: bold;
-                cursor: pointer;
-                font-size: 1rem;
-            }
+.input-group{
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+}
 
-            footer {
-                background-color: #222;
-                color: white;
-                text-align: center;
-                padding: 20px;
-                margin-top: 40px;
-            }
+.input-group input{
+    flex:1;
+}
 
-            footer a {
-                color: #b5a494;
-                text-decoration: none;
-                margin: 0 10px;
-            }
+#contact input,
+#contact textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+#contact textarea{
+    resize:none;
+    margin-bottom:20px;
+}
+
+#contact button{
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#contact button:hover{
+    background:#0b4ea2;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer a{
+    color:#b5a494;
+    text-decoration:none;
+    margin:0 10px;
+}
     </style>
 </head>
 
@@ -295,14 +320,23 @@
         </div>
     </section>
     <section id="contact">
-        <h2><i class="fa-solid fa-paper-plane"></i> Contactez-moi</h2>
-        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message envoyé avec succès !');">
-            <input type="text" placeholder="Votre nom" required>
-            <input type="email" placeholder="Votre adresse mail" required>
-            <textarea placeholder="Votre message..." rows="4" required></textarea>
-            <button type="submit">Envoyer le message</button>
-        </form>
-    </section>
+
+    <h2>CONTACTEZ-MOI</h2>
+
+    <p class="contact-text">
+        Vous avez un projet ou une opportunité ? N'hésitez pas à me contacter.
+    </p>
+
+   <form action="https://formspree.io/f/mpqvlvbr" method="POST">
+   <div class="input-group">
+       <input type="text" name="name" placeholder="Nom" required>
+     <input type="email" name="email" placeholder="Email" required>
+  </div>
+  <textarea name="message" placeholder="Message" rows="6" required></textarea>
+  <button type="submit">Envoyer</button>
+  </form>
+
+</section>
     <footer>
         <p style="margin: 0 0 10px 0;">© 2026 Awadhi Dalel. Tous droits réservés.</p>
         <div>
